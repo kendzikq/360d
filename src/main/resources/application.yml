@@ -1,1 +1,6 @@
-
+spring:
+  datasource:
+    url: jdbc:h2:~/liquibase;DB_CLOSE_ON_EXIT=TRUE
+    username: sa
+  liquibase:
+    change-log: classpath:db/dbchangelog.xml
