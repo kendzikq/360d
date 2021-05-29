@@ -1,6 +1,26 @@
 spring:
+  application:
+    name: orders-service
   datasource:
     url: jdbc:h2:~/liquibase;DB_CLOSE_ON_EXIT=TRUE
     username: sa
   liquibase:
     change-log: classpath:db/dbchangelog.xml
+  h2:
+    console:
+      enabled: true
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+
+management:
+  endpoints:
+    enabled-by-default: false
+  endpoint:
+    health:
+      enabled: true

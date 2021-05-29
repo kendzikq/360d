@@ -1,0 +1,47 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="001-create-db" author="kendzikq">
+
+        <createTable tableName="orders">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="pk_orders"/>
+            </column>
+            <column name="email" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_email"/>
+            </column>
+            <column name="amount" type="BIGINT">
+                <constraints nullable="false" notNullConstraintName="nn_orders_amount"/>
+            </column>
+            <column name="currency" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_currency"/>
+            </column>
+            <column name="user_street" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_user_street"/>
+            </column>
+            <column name="user_zipcode" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_user_zipcode"/>
+            </column>
+            <column name="user_city" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_user_city"/>
+            </column>
+            <column name="user_country" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_user_country"/>
+            </column>
+            <column name="product_name" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_product_name"/>
+            </column>
+            <column name="product_quantity" type="INT">
+                <constraints nullable="false" notNullConstraintName="nn_orders_product_quantity"/>
+            </column>
+            <column name="anti_fraud_status" type="VARCHAR">
+                <constraints nullable="false" notNullConstraintName="nn_orders_anti_fraud_status"/>
+            </column>
+        </createTable>
+
+        <createSequence sequenceName="seq_orders_id" startValue="1"/>
+
+    </changeSet>
+</databaseChangeLog>
