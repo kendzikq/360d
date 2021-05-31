@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
-import static com.example._360d.model.OrderRequestResponse.*;
+import static com.example._360d.model.OrderRequestResponse.RegistrationStatus;
 
 @Slf4j
 @RestController
@@ -35,10 +35,6 @@ public class OrderController {
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     OrderRequestResponse requestOrder(@Valid @RequestBody OrderRequest order) {
-
-        //TODO
-        // ADD integration with NBP and cache
-        // email notification
 
         log.info("Requested the order: {}", order);
 

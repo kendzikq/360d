@@ -9,6 +9,19 @@ spring:
   h2:
     console:
       enabled: true
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 1000
+        readTimeout: 5000
+        loggerLevel: basic
+
 springdoc:
   swagger-ui:
     disable-swagger-default-url: true

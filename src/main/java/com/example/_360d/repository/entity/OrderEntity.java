@@ -41,10 +41,12 @@ public class OrderEntity {
 
     private String userCountry;
 
+    @Enumerated(EnumType.STRING)
     private ProductName productName;
 
     private Integer productQuantity;
 
+    @Enumerated(EnumType.STRING)
     private AntiFraudStatus antiFraudStatus;
 
 }
