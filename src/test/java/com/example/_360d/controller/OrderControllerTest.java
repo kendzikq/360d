@@ -1,6 +1,6 @@
 package com.example._360d.controller;
 
-import com.example._360d.BaseTest;
+import com.example._360d.BaseMvcTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.springframework.http.MediaType;
@@ -10,7 +10,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
-class OrderControllerTest extends BaseTest {
+class OrderControllerTest extends BaseMvcTest {
 
 
     @CsvSource({

@@ -7,7 +7,7 @@
         <insert tableName="orders">
             <column name="id" valueSequenceNext="seq_orders_id"/>
             <column name="email" value="john.smith@gmail.com"/>
-            <column name="amount" value="200"/>
+            <column name="amount" value="20000"/>
             <column name="currency" value="USD"/>
             <column name="user_street" value="Bakery 4"/>
             <column name="user_zipcode" value="00201"/>
@@ -20,7 +20,7 @@
         <insert tableName="orders">
             <column name="id" valueSequenceNext="seq_orders_id"/>
             <column name="email" value="mary.smart@gmail.com"/>
-            <column name="amount" value="1000"/>
+            <column name="amount" value="100000"/>
             <column name="currency" value="EUR"/>
             <column name="user_street" value="Garder Str. 4"/>
             <column name="user_zipcode" value="90819"/>
@@ -34,7 +34,7 @@
         <insert tableName="orders">
             <column name="id" valueSequenceNext="seq_orders_id"/>
             <column name="email" value="mary.smart@gmail.com"/>
-            <column name="amount" value="300"/>
+            <column name="amount" value="30000"/>
             <column name="currency" value="EUR"/>
             <column name="user_street" value="Garder Str. 4"/>
             <column name="user_zipcode" value="90819"/>

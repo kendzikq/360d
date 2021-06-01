@@ -1,9 +1,11 @@
 package com.example._360d.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;
 
+@Builder
 @Data
 public class Address {
 

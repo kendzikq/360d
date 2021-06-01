@@ -1,12 +1,13 @@
 package com.example._360d.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+@Builder
 @Data
 public class OrderRequest {
 
@@ -26,5 +27,5 @@ public class OrderRequest {
 
     @Valid
     @NotNull
-    private Products products;
+    private Product products;
 }

@@ -10,7 +10,7 @@ public class AntiFraudVerificationChain {
         this.antiFraudRule = antiFraudRule;
     }
 
-    public boolean check(OrderEntity order) {
+    public boolean isNotFraud(OrderEntity order) {
         return antiFraudRule.check(order);
     }
 }

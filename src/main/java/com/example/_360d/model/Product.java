@@ -1,12 +1,14 @@
 package com.example._360d.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+@Builder
 @Data
-public class Products {
+public class Product {
 
     @NotNull
     private ProductName name;

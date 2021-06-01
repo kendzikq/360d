@@ -26,13 +26,13 @@ public class NBPResponse {
         private String table;
         private String no;
         private LocalDate effectiveDate;
-        private Rates[] rates;
+        private Rate[] rates;
     }
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class Rates {
+    public static class Rate {
 
         private String currency;
         private String code;

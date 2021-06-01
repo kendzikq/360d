@@ -3,6 +3,8 @@ package com.example._360d.repository.entity;
 import com.example._360d.model.AntiFraudStatus;
 import com.example._360d.model.Currency;
 import com.example._360d.model.ProductName;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,9 +17,11 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+@Builder
 @Entity
 @Table(name = "orders")
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class OrderEntity {
 
